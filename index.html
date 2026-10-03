@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pirate Battle</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div id="wrap"><div id="stage">
+<canvas id="c" width="918" height="515"></canvas>
+<div id="hud">
+  <div class="sp abs" style="left:10px;top:12px;width:40px;height:32px;background-position:-552px -756px"></div>
+  <div class="sp abs" style="left:46px;top:8px;width:248px;height:40px;background-position:-8px -752px">
+    <div id="hpf" class="sp abs" style="left:22px;top:10px;width:196px;height:20px;background-position:-466px -699px"></div>
+    <div class="t" id="hpt"></div></div>
+  <div class="sp abs" style="left:318px;top:6px;width:152px;height:44px;background-position:-8px -690px">
+    <div class="sp abs" style="left:10px;top:2px;width:40px;height:39px;background-position:-944px -752px;transform:scale(.7)"></div>
+    <div class="t" id="sct" style="left:30px"></div></div>
+  <div class="sp abs" style="right:84px;top:12px;width:152px;height:31px;background-position:-568px -808px">
+    <div class="sp abs" style="left:4px;top:-4px;width:40px;height:40px;background-position:-64px -808px;transform:scale(.75)"></div>
+    <div class="t" id="tmt" style="left:24px;font-size:15px"></div></div>
+  <div id="pz" class="click sp abs" style="right:12px;top:6px;width:56px;height:56px;background-position:-800px -592px;transform:scale(.8);transform-origin:100% 0">
+    <div class="sp abs" style="left:10px;top:8px;width:36px;height:40px;background-position:-722px -752px"></div></div>
+<div id="mu" class="click sp abs" style="right:12px;top:58px;width:56px;height:56px;background-position:-800px -592px;transform:scale(.7);transform-origin:100% 0"><div class="t" id="mui" style="font-size:22px">🔊</div></div>
+<div id="sb" class="click sp abs" style="right:12px;top:104px;width:56px;height:56px;background-position:-800px -592px;transform:scale(.7);transform-origin:100% 0"><div class="t" style="font-size:20px">💥</div></div>
+<div id="svp">Volume dos efeitos</div>
+<div id="ph" class="abs" style="left:322px;top:54px;color:#fbe9bb;font-weight:800;font-size:15px;text-shadow:0 1px 3px #000"></div>
+<div class="wp"><div class="slot"><div class="sp"><div class="cd" id="cd0"></div><div class="t">1</div></div><span>Padrão</span></div><div class="slot"><div class="sp"><div class="cd" id="cd1"></div><div class="t">2</div></div><span>Triplo</span></div><div class="slot"><div class="sp"><div class="cd" id="cd2"></div><div class="t">3</div></div><span>Pesado</span></div></div>
+</div>
+<div id="ov"><div class="sp board" id="pn"></div></div>
+</div></div>
+<script src="js/game.js"></script></body></html>

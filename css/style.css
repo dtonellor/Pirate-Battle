@@ -1,0 +1,35 @@
+
+:root{--u:url(../assets/images/ui_sheet.png);--bg:#0b3a52;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);overflow:hidden;font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif}
+body{display:flex;align-items:center;justify-content:center}
+#wrap{position:relative}
+#stage{position:absolute;left:0;top:0;width:918px;height:515px;transform-origin:0 0;overflow:hidden}
+canvas{display:block}
+.sp,.btn{background-image:var(--u);background-repeat:no-repeat}
+.abs{position:absolute}
+.t{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:17px;text-shadow:0 1px 2px #000a}
+#hud{position:absolute;inset:0;pointer-events:none;display:none}
+#hud.on{display:block}
+#hud .click{pointer-events:auto;cursor:pointer}
+#ov{position:absolute;inset:0;display:none;align-items:center;justify-content:center;background:rgba(6,30,48,.45)}
+#ov.on{display:flex}
+.board{width:372px;height:472px;background-position:-10px -8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:26px}
+.logo{width:372px;height:106px;background-position:-402px -15px;transform:scale(.8);margin:-8px 0}
+h2{margin:0;color:#fbe9bb;font-size:30px;text-shadow:0 2px 3px #000a;letter-spacing:.02em}
+.sub{color:#cfe1ea;font-size:15px;line-height:1.45;max-width:270px}
+.big{color:#fbe9bb;font-size:64px;font-weight:800;line-height:1}
+.btn{width:240px;height:80px;border:0;background-color:transparent;background-position:-540px -496px;color:#4a2a0a;font:800 24px "Trebuchet MS",sans-serif;cursor:pointer;padding:0 0 4px;transform:scale(.85);margin:-6px 0}
+.btn.dark{background-position:-276px -592px;color:#fbe9bb;font-size:20px}
+.btn:hover{filter:brightness(1.12)}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:-6px;border-radius:30px}
+.wp{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);display:flex;gap:18px}
+.slot{display:flex;flex-direction:column;align-items:center;gap:2px;color:#fbe9bb;font-weight:800;font-size:12px;text-shadow:0 1px 2px #000}
+.slot .sp{position:relative;width:56px;height:56px;background-position:-800px -592px}
+.slot .t{font-size:22px}
+.cd{position:absolute;inset:7px;border-radius:50%}
+.vol{display:flex;flex-direction:column;align-items:center;gap:4px;color:#cfe1ea;font-size:14px;font-weight:700}
+input[type=range]{width:200px;accent-color:#f2c14e;cursor:pointer}
+#svp{position:absolute;right:76px;top:100px;display:none;flex-direction:column;align-items:center;gap:4px;padding:8px 14px;background:#1c3550ee;border:3px solid #b9772e;border-radius:12px;color:#fbe9bb;font-size:13px;font-weight:800;pointer-events:auto}
+#svp.on{display:flex}
+#svp input{width:130px}
